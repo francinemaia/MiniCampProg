@@ -1,5 +1,32 @@
 <html>
     <script>
+        var carros = ["Gol", "Palio", "Uno"];
+        console.log(carros);
+
+        var primeiroCarro = carros[0];
+        var segundoCarro = carros[1];
+        var terceiroCarro = carros[2];
+
+        console.log("primeira posição: " + primeiroCarro);
+        console.log("segunda posição: " + segundoCarro);
+        console.log("terceira posição: " + terceiroCarro);
+
+        carros[2] = "Argo";
+        console.log(carros[2]);
         
-    </script>
+        //adicionar elemento
+        carros.push("Polo");
+        console.log(carros);
+
+        //remover elemento
+        console.log(carros.pop())
+
+        //inserir elementos no inicio da lista
+        carros.unshift("Jetta");
+        console.log(carros);
+
+        //remover primeiro elemento
+        carros.shift();
+        console.log(carros);
+</script>
 </html>
